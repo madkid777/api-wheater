@@ -1,5 +1,5 @@
 async function getWheather(s) {
-    var url = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c837fb53f0f148cf9f3164236252506&q=${s}&days=3`)
+    var url = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c837fb53f0f148cf9f3164236252506&q=${s}&days=3`)
     var urlJson = await url.json()
     disCurrent(urlJson.location, urlJson.current);
     nextdays(urlJson.forecast.forecastday)
