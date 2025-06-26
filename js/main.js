@@ -25,7 +25,6 @@ function disCurrent(country, temperature) {
     var currentLOC = `<div  class="current col-12 col-lg-4 rounded-2 p-3">
                             <div class="d-flex justify-content-between align-content-center bg-dagblack text-white w-100 p-2"><span>${dayName}</span><span>${date.getDate()}${monthName}</span></div>
                             <div class="text-white mt-3" ><span>${country.name}</span> <p class="fs-1 fw-semibold">${temperature.temp_c}<sup>o</sup>C</p> <div> <img src="${temperature.condition.icon}"></div><div class="text-primary"> ${temperature.condition.text}</div>
-                           
                     </div>`
     document.getElementById("table").innerHTML = currentLOC
 }
