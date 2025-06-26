@@ -1,0 +1,23 @@
+.navbar .img-thumbnail {
+    background-color: transparent !important;
+    border: none;
+}
+
+.bg-dagblack {
+    background-color: #2D303D;
+}
+
+.search-part {
+    background-image: url(../img/banner.png);
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+
+.btn-move {
+    right: -5%;
+}
+
+.current {
+    background-color: #323544;
+}
