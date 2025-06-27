@@ -48,6 +48,8 @@ function nextdays(temperature) {
         <div class="text-secondary mt-3 text-center fs-6" > ${parseFloat(mintemp)}<sup>o</sup>C</p></div>   
         <div class="text-primary text-center">${text}</div>
                     </div> `
+
     }
 }
 getWheather("cairo")
+
