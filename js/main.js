@@ -42,7 +42,7 @@ function nextdays(temperature) {
 
         document.getElementById("table").innerHTML += `
         <div id="day" class="current col-12 col-lg-4  text-white rounded-2 p-3">
-        <div class="d-flex justify-content-between align-content-center bg-dagblack text-white   p-2"><span class="text-center w-100">${days[date.getDay() + i]}</span></div>
+        <div class="d-flex justify-content-between align-content-center bg-dagblack text-white   p-2"><span class="text-center w-100">${days[(date.getDay() + i) % 7]}</span></div>
             <img src="${icon}" class="position-relative start-50 translate-middle-x">            
         <div class="text-white mt-3 text-center fs-4" > ${parseFloat(maxtemp)}<sup>o</sup>C</p></div>   
         <div class="text-secondary mt-3 text-center fs-6" > ${parseFloat(mintemp)}<sup>o</sup>C</p></div>   
